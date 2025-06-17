@@ -8,12 +8,8 @@ We start from a simplified theoretical model, then write a code to conduct compa
 ## Project Overview
 
 1. **Model & Theory**  
-   We derive the recursive pricing equation  
-   \[
-     p(y) \;=\;\mathbb{E}\Bigl[\beta\,\frac{u'(y')}{u'(y)}\,(y'+p(y'))\Bigr]
-   \]
-   under CRRA utility \(u(c)=c^{1-\gamma}/(1-\gamma)\).  
+   We derive the recursive pricing equation in a representative agent model with endowment and a single asset.  
 2. **Numerical Solution**  
-   We discretize the dividend (or consumption) process via Rouwenhorst’s method, solve the fixed-point problem \(f = T f\) by value‐function iteration, and recover the equilibrium price function \(p(y)\).  
-3. **Micro-Moment Calibration**  
-   We calibrate the coefficient of relative risk aversion \(\gamma\) (holding \(\beta\) at 0.95) to match the historical U.S. **equity premium** (6 % p.a.), using simulated equity returns and the model’s stochastic discount factor.
+   We discretize the dividend (or consumption) AR(1) process via Tauchen’s method and solve the fixed-point problem by value‐function iteration, and recover the equilibrium price function.  
+3. **Micro-Moment Calibration**
+   We calibrate the coefficient of relative risk aversion and discount factor to match real-world risk-free rate and equity premium.
