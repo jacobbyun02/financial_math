@@ -1,4 +1,4 @@
-# Lucas Tree Asset‐Pricing Project
+# The Lucas Tree Model of Asset‐Pricing
 
 This repository implements the classic Lucas (1978) tree model of asset pricing.  
 We start from a simplified theoretical model, then write a code to conduct comparative statics and micro-moment calibration.
